@@ -44,17 +44,17 @@
 class Solution {
 public:
 
-    bool isAlphanumeric(char ch){
-            if('A'<=ch && ch<='Z')
-            return true;
-            if('a'<=ch && ch<='z')
-            return true;
-            if('0'<=ch && ch<='9')
-            return true;
-            else
-            return false;
+    // bool isAlphanumeric(char ch){
+    //         if('A'<=ch && ch<='Z')
+    //         return true;
+    //         if('a'<=ch && ch<='z')
+    //         return true;
+    //         if('0'<=ch && ch<='9')
+    //         return true;
+    //         else
+    //         return false;
             
-        }
+    //     }
 
 
     bool isPalindrome(string s) {
@@ -62,11 +62,11 @@ public:
         int end= s.length()-1;
 
         while(start<end){
-        if (!isAlphanumeric(s[start])){
+        if (!isalnum(s[start])){
             start++;
             continue;
         }
-        if (!isAlphanumeric(s[end])){
+        if (!isalnum(s[end])){
             end--;
             continue;
         }
