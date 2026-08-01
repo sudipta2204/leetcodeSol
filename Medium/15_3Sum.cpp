@@ -57,7 +57,7 @@ public:
             int j=i+1;
             int k= nums.size()-1;
             while(j<k){
-            int sum=nums[i]+nums[j]+nums[k];
+            long long sum= 1LL* nums[i]+nums[j]+nums[k];
             if(sum==0){
                 ans.push_back({nums[i],nums[j],nums[k]});
                 j++;
